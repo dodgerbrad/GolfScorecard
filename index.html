@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-Hole Golf Scorecard</title>
+    <link rel="stylesheet" href="score.css"></link>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Golf Scorecard</h2>
+        <label for="golfer">Select Your Name: </label><select id="golfer">
+            <option value="none">Select Golfer</option>
+            <option value="Tiger Woods">Tiger Woods</option>
+            <option value="Rory McIlroy">Rory McIlroy</option>
+        </select>
+
+        <dialog id="confirmDialog">
+            <!-- The span below will be updated by JavaScript -->
+            <p>Is your name <strong id="namePlaceholder"></strong>?</p>
+
+            <form method="dialog" id="test">
+                <button value="no" id="btn1">No, that's not me</button>
+                <button value="yes"id="btn2">Yes, that's me</button>
+            </form>
+        </dialog>
+
+
+        <div class="grid" id="score-inputs">
+            <!-- JavaScript will generate 18 holes here -->
+        </div>
+
+        <div class="totals">
+            <div class="total-line">Front 9: <span id="front-total" class="total-val">0</span></div>
+            <div class="total-line">Back 9: <span id="back-total" class="total-val">0</span></div>
+            <hr>
+            <div class="total-line">Total Score: <span id="grand-total" class="total-val">0</span></div>
+        </div>
+
+        <button onclick="window.location.reload()"
+            style="width:100%; margin-top:15px; padding:10px; background:#ddd; border:none; border-radius:4px; cursor:pointer;">Reset
+            Card</button>
+    </div>
+
+    <script src="score.js"></script>
+
+</body>
+
+</html>
