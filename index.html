@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="LV.png">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <meta name="theme-color" content="#2e7d32">
     <title>18-Hole Golf Scorecard</title>
@@ -16,6 +17,10 @@
 </head>
 
 <body>
+    <div id="loadingOverlay" class="loader-overlay">
+        <div class="spinner"></div>
+        <p>Loading Golfers...</p>
+    </div>
 
     <div class="card">
         <h2>LV Invite</h2>
