@@ -161,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     confirmDialog.addEventListener('close', () => {
         if (confirmDialog.returnValue === 'yes') {
+            golferSelect.disabled = true; 
             startHoleDialog.showModal();
         } else {
             golferSelect.value = 'none';
